@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Parallax Text Scrolling Effect</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+
+    <body>
+        <section>
+            <div class="text">
+                <h2 style="--i: 0.5">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 1.5">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 2.5">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 2.25">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 1.25">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 0.75">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 3">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 0.35">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+
+                <h2 style="--i: 2.35">
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                    <span>Quoc Dat</span>
+                </h2>
+            </div>
+        </section>
+
+        <script>
+            const position = document.documentElement;
+            position.addEventListener("mousemove", (e) => {
+                position.style.setProperty("--x", e.clientX + "px");
+            });
+        </script>
+    </body>
+</html>
