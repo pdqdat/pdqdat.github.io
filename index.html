@@ -1,138 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Quoc Dat</title>
         <meta charset="UTF-8" />
-        <title>Parallax Text Scrolling Effect</title>
         <link rel="stylesheet" href="main.css" />
     </head>
 
     <body>
-        <section>
-            <div class="text">
-                <h2 style="--i: 0.5">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
+        <div class="container">
+            <h2><span>Phan Duong Quoc Dat</span><br />Bao Loc, Lam Dong</h2>
+        </div>
 
-                <h2 style="--i: 1.5">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 2.5">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 2.25">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 1.25">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 0.75">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 3">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 0.35">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-
-                <h2 style="--i: 2.35">
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                    <span>Quoc Dat</span>
-                </h2>
-            </div>
-        </section>
-
+        <script src="anime.min.js"></script>
         <script>
-            const position = document.documentElement;
-            position.addEventListener("mousemove", (e) => {
-                position.style.setProperty("--x", e.clientX + "px");
-            });
+            const container = document.querySelector(".container");
+            for (var i = 0; i <= 100; i++) {
+                const blocks = document.createElement("div");
+                blocks.classList.add("block");
+                container.appendChild(blocks);
+            }
+
+            function animateBlocks() {
+                anime({
+                    targets: ".block",
+                    translateX: function () {
+                        return anime.random(-700, 700);
+                    },
+                    translateY: function () {
+                        return anime.random(-500, 500);
+                    },
+                    scale: function () {
+                        return anime.random(1, 5);
+                    },
+
+                    easing: 'linear',
+                    duration: 3000,
+                    delay: anime.stagger(10),
+                    complete: animateBlocks,
+                });
+            }
+
+            animateBlocks();
         </script>
     </body>
 </html>
