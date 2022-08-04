@@ -27,17 +27,18 @@ body {
 h2 {
     color: #fff;
     text-align: center;
-    font-size: 12vw;
-    line-height: 0.6em;
+    font-size: 6vw;
+    line-height: 0.9em;
     z-index: 1000;
-    font-weight: 900;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 h2 span {
-    font-size: 0.2em;
-    letter-spacing: 0.4em;
+    font-size: 0.4em;
+    letter-spacing: 0.3em;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .block {
