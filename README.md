@@ -1,4 +1,4 @@
-# pdqdat.github.io
+# Dat Phan's Personal Website
 
 Welcome to my personal website project! 🌐
 
