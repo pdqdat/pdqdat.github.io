@@ -1,0 +1,15 @@
+title: pdqdat.json
+description: Basic information about pdqdat in JSON format
+baseurl: /
+url: https://pdqdat.github.io
+
+exclude:
+  - README.md
+  - vendor/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  sourcemap: never

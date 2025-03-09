@@ -1,0 +1,20 @@
+- key: Name
+  value: Dat Phan
+- key: Description
+  value:
+    - IT student
+    - Web developer
+    - Front-end enthusiast
+  typed: true
+- key: Portfolio
+  value: datphan.me
+  url: https://datphan.me
+- key: Contact
+  value: pd.quocdat@gmail.com
+  url: "mailto:pd.quocdat@gmail.com"
+- key: Socials
+  value:
+    - value: Linkedin
+      url: https://www.linkedin.com/in/pdqdat
+    - value: Github
+      url: https://github.com/pdqdat
